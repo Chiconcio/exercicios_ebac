@@ -13,15 +13,15 @@ Quando eu digitar o nome completo "Sebastião da Garruncha Trucada"
 E o email "sebas@yahoo.com.br"
 Então deve exibir uma mensagem de "compra efetuada com sucesso"
 
-Cenário: Preenchimento Incorreto
-Quando eu digitar o nome completo "Sebastião da Garruncha Trucada"
-E o email "bastiao@yahoo.com.br"
-Então deve exibir uma mensagem de "Email não encontrado"
+Esquema do Cenário: Preenchimento incorreto ou incompleto
+Quando eu digitar o <nome completo de usuario>
+E o <email>
+Então deve exibir "Preenchimento incorreto, verifique novamente as informaçôes inseridas"
 
-Cenário: Preenchimento Incompleto
-Quando eu digitar o nome completo "Sebastião da Garruncha Trucada"
-E o email ""
-Então deve exibir uma mensagem de "Cadastro incompleto"
+Exemplos:
+|nome completo de usuario|email|
+| |sebas@yahoo.com.br|
+|Um Dois Três de Oliveira Quatro|123deoli4.com.br|
 
 Esquema do Cenário: Cadastrar múltiplos usuários
 Quando eu digitar o <nome completo de usuario>

@@ -11,14 +11,13 @@ Quando eu digitar o usuário "thiago@ebac.com.br"
 E a senha "senha@123"
 Então deve exibir o dashboard da página do cliente
 
-Cenário: Email Inválido
+Esquema do Cenário:  Email e senha inválidos
 Dado que eu acesse a página de autenticação do portal EBAC-SHOP
-Quando eu digitar o usuário "kskskjdn@ebac.com.br"
-E a senha "senha@123"
-Então deve exibir uma mensagem de erro "Usuário ou senha inválidos"
+Quando eu digitar <usuário>
+E a <senha>
+Então deve exibir <mensagem de erro>
 
-Cenário: Senha Inválida
-Dado que eu acesse a página de autenticação do portal EBAC-SHOP
-Quando eu digitar o usuário "thiago@ebac.com.br"
-E a senha "aaaaaaaa"
-Então deve exibir uma mensagem de erro "Usuário ou senha inválidos"
+Exemplos:
+|usuário|senha|mensagem de erro|
+|thiago.com.br|senha#123|Usuário Inexistente|
+|thiago@ebac.com.br|1*|Senha incorreta|

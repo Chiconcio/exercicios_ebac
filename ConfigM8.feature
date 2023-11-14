@@ -17,16 +17,16 @@ Então deve ativar o botão de comprar para envio ao carrinho
 
 Cenário: Configuração inválida
 Quando eu configurar cor "preto"
-E o tamanho "PP"
-E a quantidade "10"
-Então deve exibir uma mensagem de indisponibilidade "Produto indisponível"
+E o tamanho "nenhum"
+E a quantidade "1"
+Então deve exibir uma mensagem de indisponibilidade "Selecione o tamanho desejado"
 
 Cenário: Quantidade excedida
 Quando eu configurar cor "marrom"
 E o tamanho "G"
-E a quantidade "11"
+E a quantidade "100"
 Então deve exibir uma mensagem de limite excedido "Limite máximo de 10 produtos excedido"
 
 Cenário: Limpeza de filtros
 Quando eu clicar em <limpar>
-Então deve exibir uma mensagem de confimação "Os filtros do produto serão retirados. Deseja continuar?"
+Então deve exibir uma mensagem de confirmação "Os filtros do produto serão retirados. Deseja continuar?"
