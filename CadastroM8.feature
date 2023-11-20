@@ -8,14 +8,8 @@ Para finalizar minha compra
 Contexto:
 Dado que eu acesse a página de checkout do carrinho
 
-Cenário: Preenchimento correto
-Quando eu digitar o nome completo "Sebastião da Garruncha Trucada"
-E o email "sebas@yahoo.com.br"
-Então deve exibir uma mensagem de "compra efetuada com sucesso"
-
 Esquema do Cenário: Preenchimento incorreto ou incompleto
-Quando eu digitar o <nome completo de usuario>
-E o <email>
+Quando eu digitar o <nome completo de usuario> e <email>
 Então deve exibir "Preenchimento incorreto, verifique novamente as informaçôes inseridas"
 
 Exemplos:
@@ -24,8 +18,7 @@ Exemplos:
 |Um Dois Três de Oliveira Quatro|123deoli4.com.br|
 
 Esquema do Cenário: Cadastrar múltiplos usuários
-Quando eu digitar o <nome completo de usuario>
-E o <email>
+Quando eu digitar o <nome completo de usuario> e <email>
 Então deve exibir "Cadastro efetuado com sucesso"
 
 Exemplos:

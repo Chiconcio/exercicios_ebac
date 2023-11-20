@@ -7,14 +7,12 @@ Para visualizar meus pedidos
 
 Cenário: Autenticação Válida
 Dado que eu acesse a página de autenticação do portal EBAC-SHOP
-Quando eu digitar o usuário "thiago@ebac.com.br"
-E a senha "senha@123"
+Quando eu digitar os campos válidos, usuário e senha
 Então deve exibir o dashboard da página do cliente
 
 Esquema do Cenário:  Email e senha inválidos
 Dado que eu acesse a página de autenticação do portal EBAC-SHOP
-Quando eu digitar <usuário>
-E a <senha>
+Quando eu digitar <usuário> e <senha>
 Então deve exibir <mensagem de erro>
 
 Exemplos:
